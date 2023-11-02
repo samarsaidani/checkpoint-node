@@ -9,7 +9,7 @@ const transporter = nodemailer.createTransport({
   secure: true,
   auth: {
    user: "samsaidani5@gmail.com",
-   pass: 'samar1995amin'
+   pass: 'mmna cxgx kfrk vyri'
   },
     tls: {
         ciphers:'SSLv3'
@@ -18,7 +18,7 @@ const transporter = nodemailer.createTransport({
     debug: true
  })
 
- const sendEmail = (email, token) => {
+
   const mailOptions = {
       from :'samsaidani5@gmail.com',
           to : 'samarsaidani10@gmail.com',
@@ -26,7 +26,7 @@ const transporter = nodemailer.createTransport({
           text : 'hello samar  '
  };
 
- transporter.sendEmail(mailOptions, function (error, info) {
+ transporter.sendMail(mailOptions, function (error, info) {
   if (error) {
     console.log('Error in sending email  ' + error);
     return true;
@@ -36,6 +36,6 @@ const transporter = nodemailer.createTransport({
   }
  })
 
- }
+ 
 
 
